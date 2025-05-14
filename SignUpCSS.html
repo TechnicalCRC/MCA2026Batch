@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" type="css/text" href="style.css">
+  <style>
+    #main {
+      background-color: bisque;
+      width: 70%;
+      margin: auto;
+      border: 30px solid transparent;
+      border-image: url(../css/images.jpeg) 30 round; 
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    label {
+      color: blue;
+      font-weight: bolder;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    legend {
+      color: red;
+    }
+
+    input[type=submit]{
+      background-color: yellow;
+      border: 3px solid red;
+      margin-top: 10px;
+      text-align: center;
+      width: 50%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sign Up Page</h1>
+  <div id="main">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <div>
+        <label for="">First Name</label>
+        <input type="text" name="" id="" required>
+      </div>
+      <div>
+        <label for="">Last Name</label>
+        <input type="text" name="" id="">
+      </div>
+      <div>
+        <label for="">Email Id</label>
+        <input type="email" name="" id="">
+      </div>
+      <div>
+        <label for="">Password</label>
+        <input type="password" name="" id="">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Gender Info</legend>
+      <label for="">Gender</label>
+      <input type="radio" name="gen" id="">Male
+      <input type="radio" name="gen" id="">Female
+    </fieldset>
+    <fieldset>
+      <legend>Contact Info</legend>
+      <div>
+        <label for="">State</label>
+        <select name="" id="">
+          <option value="">Delhi</option>
+          <option value="">Noida</option>
+          <option value="">Ghaziabad</option>
+          <option value="">Meerut</option>
+        </select>
+      </div>
+
+    </fieldset>
+     <div>
+    <input type="submit" value="Submit">
+     </div>
+  </div>
+</body>
+
+</html>

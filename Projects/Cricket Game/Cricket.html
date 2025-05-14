@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cricket Game - Bat Ball Stump</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Cricket Game - Bat Ball Stump</h1>
+
+  <button onclick="
+   console.log('User Chooses Bat');
+   computer = Math.random()*3;
+   console.log(computer)
+   if(computer>= 0 && computer < 1)
+     comp = 'Bat';
+   else if(computer>= 1 && computer < 2)
+     comp = 'Ball';
+   else if(computer>= 2 && computer < 3)
+     comp = 'Stump';
+     console.log(`Computer chosses ${comp}`)
+
+  ">Bat</button>
+  <button>Ball</button>
+  <button>Stump</button>
+</body>
+
+</html>
