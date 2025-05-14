@@ -15,68 +15,9 @@
 
   <button onclick="
   user = 'Bat';
-  
-  comp = Math.random()*3;
-  
-   if(comp > 0 && comp <= 1)
-     computer = 'Bat';
-   else if(comp > 1 && comp <= 2)
-     computer = 'Ball';
-   else if(comp > 2 && comp <= 3)
-     computer = 'Stump';
-    
-     var res;
-  
-     if(user == computer)
-       res = `It's Tie!`;
-     else if((user == 'Bat' && computer == 'Ball') || 
-             (user == 'Ball' && computer == 'Stump') || 
-             (user == 'Stump' && computer == 'Bat')) 
-       res = 'User Win!';
-     else if((user == 'Ball' && computer == 'Bat') || 
-             (user == 'Stump' && computer == 'Ball') || 
-             (user == 'Bat' && computer == 'Stump')) 
-       res = 'Computer Win!';
-
-       let result = document.getElementById('result');
-       result.innerHTML = ` User Choice : ${user} <br>  Computer Choice : ${computer} <hr> Result : ${res}`; 
-
-  ">Bat <br> <img src="bat.jpg" height="100px"></button>
-
-  <button onclick="
-  user = 'Ball';
-  
-  comp = Math.random()*3;
-  
-   if(comp > 0 && comp <= 1)
-     computer = 'Bat';
-   else if(comp > 1 && comp <= 2)
-     computer = 'Ball';
-   else if(comp > 2 && comp <= 3)
-     computer = 'Stump';
-      
-     var res;
-     if(user == computer)
-       res = `It's Tie!`;
-     else if((user == 'Bat' && computer == 'Ball') || 
-             (user == 'Ball' && computer == 'Stump') || 
-             (user == 'Stump' && computer == 'Bat')) 
-       res = 'User Win!';
-     else if((user == 'Ball' && computer == 'Bat') || 
-             (user == 'Stump' && computer == 'Ball') || 
-             (user == 'Bat' && computer == 'Stump')) 
-       res = 'Computer Win!';
-
-       let result = document.getElementById('result');
-       result.innerHTML = ` User Choice : ${user} <br>  Computer Choice : ${computer} <hr> Result : ${res}`; 
-
-  ">Ball <br> <img src="ball.jpg" height="100px"></button>
-
-  <button onclick="
-  user = 'Stump';
-  
+   console.log('User Choice : ' + user);
    comp = Math.random()*3;
-  
+  // console.log(comp)
    if(comp > 0 && comp <= 1)
      computer = 'Bat';
    else if(comp > 1 && comp <= 2)
@@ -85,25 +26,74 @@
      computer = 'Stump';
      console.log(`Computer choice : ${computer}`)
 
-       var res;
      if(user == computer)
-       res = `It's Tie!`;
+       console.log(`It's Tie!`)
      else if((user == 'Bat' && computer == 'Ball') || 
              (user == 'Ball' && computer == 'Stump') || 
              (user == 'Stump' && computer == 'Bat')) 
-       res = 'User Win!';
+       console.log('User Win!');
      else if((user == 'Ball' && computer == 'Bat') || 
              (user == 'Stump' && computer == 'Ball') || 
              (user == 'Bat' && computer == 'Stump')) 
-       res = 'Computer Win!';
+       console.log('Computer Win!');
 
-       let result = document.getElementById('result');
-result.innerHTML = ` User Choice : ${user} <br>  Computer Choice : ${computer} <hr> Result : ${res}`; 
+  ">Bat</button>
 
-  ">Stump <br> <img src="stump.jpeg" height="100px"></button>
+  <button onclick="
+  user = 'Ball';
+   console.log('User Choice : ' + user);
+   comp = Math.random()*3;
+  // console.log(comp)
+   if(comp > 0 && comp <= 1)
+     computer = 'Bat';
+   else if(comp > 1 && comp <= 2)
+     computer = 'Ball';
+   else if(comp > 2 && comp <= 3)
+     computer = 'Stump';
+     console.log(`Computer choice : ${computer}`)
+
+     if(user == computer)
+       console.log(`It's Tie!`)
+     else if((user == 'Bat' && computer == 'Ball') || 
+             (user == 'Ball' && computer == 'Stump') || 
+             (user == 'Stump' && computer == 'Bat')) 
+       console.log('User Win!');
+     else if((user == 'Ball' && computer == 'Bat') || 
+             (user == 'Stump' && computer == 'Ball') || 
+             (user == 'Bat' && computer == 'Stump')) 
+       console.log('Computer Win!');
+
+  ">Ball</button>
+
+  <button onclick="
+  user = 'Stump';
+   console.log('User Choice : ' + user);
+   comp = Math.random()*3;
+  // console.log(comp)
+   if(comp > 0 && comp <= 1)
+     computer = 'Bat';
+   else if(comp > 1 && comp <= 2)
+     computer = 'Ball';
+   else if(comp > 2 && comp <= 3)
+     computer = 'Stump';
+     console.log(`Computer choice : ${computer}`)
+
+     if(user == computer)
+       console.log(`It's Tie!`)
+     else if((user == 'Bat' && computer == 'Ball') || 
+             (user == 'Ball' && computer == 'Stump') || 
+             (user == 'Stump' && computer == 'Bat')) 
+       console.log('User Win!');
+     else if((user == 'Ball' && computer == 'Bat') || 
+             (user == 'Stump' && computer == 'Ball') || 
+             (user == 'Bat' && computer == 'Stump')) 
+       console.log('Computer Win!');
+
+  ">Stump</button>
 
   <br><br>
-  <h2 id="result"> </h2>
+  <h2 id="result"></h2>
+
 </body>
 
 </html>

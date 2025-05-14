@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Even Odd Checker App</title>
+</head>
+
+<body>
+
+  <h1 style="text-align: center;">Even Odd Checker App</h1>
+  <hr>
+  <input type="number" id="txt1" placeholder="Enter Number : ">
+  <button onclick="
+  let num = document.getElementById('txt1').value;
+
+  let even = document.getElementById('even-res');
+  let odd = document.getElementById('odd-res');
+
+  if(num % 2 == 0)
+     document.getElementById('even-res').innerHTML += '<br> ' + num;
+  else
+     odd.innerHTML += '<br>' + num;
+
+  ">Check Even / Odd</button>
+  <hr>
+
+  <div style="width: 100%; margin: 20px 0px 0px 0px;">
+
+    <div id="even-res"
+      style="border: 2px solid red; display: inline; width: 45%; float: left;  text-align: center; font-weight: bolder; padding: 10px 0px;">
+      Even's <br>
+    </div>
+
+    <div id="odd-res"
+      style="border: 2px solid blue; display: inline; width: 45%; float: right; font-weight: bolder; text-align: center; padding: 10px 0px;">
+      Odd's <br>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
