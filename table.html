@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table of no</title>
+</head>
+<body>
+  <h1>Table</h1>
+  <hr>
+  <input type="text" id="txt1" placeholder="Enter number">
+  
+   <button onclick="
+     let num = Number(document.getElementById('txt1').value);
+     let result = document.getElementById('result'); 
+  for(i=1; i<=10; i++){
+    result.innerHTML += `${num} * ${i} = ${num*i} <br>`;
+  }
+
+//    let num = Number(document.getElementById('txt1').value);
+  // for(i=1; i<=10; i++){
+  //   console.log(`${num} * ${i} = ${num*i}`)
+  // }
+">Draw Table</button>
+<hr>
+
+<div id="result"></div>
+
+
+<script>
+
+  // let num = 3;
+  // for(i=1; i<=10; i++){
+  //   console.log(`${num} * ${i} = ${num*i}`)
+  // }
+</script>
+</body>
+</html>
