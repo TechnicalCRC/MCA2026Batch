@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Strings</h1>
+  
+  <script>
+   let str = "hello";
+   console.log(str)
+   str = 'hello';
+   console.log(str)
+
+   console.log(typeof str)
+
+   str =new String('hello');
+   console.log(str)
+
+   console.log(typeof str)
+   console.log("Len - " + str.length)
+
+
+   str = "2+3";
+   console.log(eval(str))
+   str = new String("2+3");
+   console.log(eval(str))
+   console.log(eval(String(str)))
+   console.log(eval(str.valueOf()))
+
+   console.log("functions--")
+   str = "hello";
+   console.log(str)
+   console.log(str.charAt(0))
+   console.log(str.charAt(9))
+   console.log(str.concat("Bye"))
+   console.log(str + "Bye")
+   s = "Hi"
+   console.log(str.concat(s))
+   
+   console.log(str.indexOf("l"))
+   console.log(str.indexOf("lo"))
+   console.log(str.indexOf("9"))
+   console.log(str.lastIndexOf("l"))
+
+console.log("match")
+   console.log(str.match("l"))
+   console.log(str.match("lo"))
+
+  console.log(str.matchAll("l"))
+  t = str.matchAll("l");
+  for(i of t)
+  console.log(" pos " + i.index)
+
+  console.log("replace")
+  console.log(str.replace("l", "to")); 
+  console.log(str.replaceAll("l", "to"));
+  console.log("--Search--")
+
+  console.log(str.search("l"))
+  console.log(str.search("lo"))
+  console.log(str.search("p"))
+
+  console.log("--split--")
+
+  str = "1,2,3,5,6";
+  console.log(str.split(","));
+  str = "This is a boy";
+  console.log(str.split(" "));
+  console.log(str.split("s"));
+  
+  str = "hello"
+  console.log(str.substr(2,3))
+  console.log(str.substr(2,))
+  console.log(str.substr(2,30))
+  console.log(str.substring(2,3))
+  console.log(str.slice(2,3))
+
+
+  console.log(str.substring(2,5))
+  console.log(str.substring(5,2))
+ 
+  console.log(str.slice(2,5))
+  console.log(str.slice(5,2))
+
+
+  console.log(str.substring(-3,-1))
+  console.log(str.slice(-3,-1))
+
+
+  console.log(str.toLocaleLowerCase())
+  console.log(str.toUpperCase())
+  
+  console.log("--Number--")
+  let a = 10.5;
+  let b = new Number(10);
+  console.log(typeof a)
+ console.log(typeof b)
+
+ 
+  </script>
+  
+</body>
+</html>

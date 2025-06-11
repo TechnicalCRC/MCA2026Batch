@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 align="center">Menu Picker Project</h1>
+  <hr>
+   <h1 align="center">Dinner Menu</h1>
+   <hr>
+  <button onclick="dinner()"> Click Here to Pick Dish for Dinner </button>
+  <hr>
+  <h1 id="din" align="center"></h1>
+  
+  <script>
+
+    let menu = ["Chole-Bhature",
+      "Chole-Kulche",
+      "Dal Makni - Naan",
+      "Pani Puri",
+      "Poha",
+      "Matar Paneer - Butter Naan",
+      "Aalu Dam - Lachha Paratha",
+      "Chili Potato",
+      "Chawmin"," Chili Paneer"
+    ]
+
+
+    function dinner(){
+     let len = menu.length;
+     console.log(len) 
+     let v = Math.random() * len;
+     console.log(v);
+//     console.log(Math.);
+
+     din.innerHTML =" Your Dinner Menu <hr><font color='Green'> " + menu[Math.floor(v)] +" </font>";
+
+    }
+  </script>
+</body>
+</html>
